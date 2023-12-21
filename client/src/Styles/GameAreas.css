@@ -1,0 +1,143 @@
+.gameAreaTitle {
+    font-size: 4em;
+    text-transform: uppercase;
+    font-style: italic;
+    text-decoration: underline;
+    margin-top: 1em !important;
+    animation: fadeTitleDown .5s ease-in-out;
+}
+
+.loggedInPageTitle {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-style: italic;
+  text-decoration: underline;
+  animation: fadeTitleDown .25s ease-in-out;
+  margin-top: .5em;
+  margin-bottom: .75em;
+}
+
+.modeDesc {
+  animation: fadeContentLeft .75s ease-in-out;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+.mode-buttons {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.btn.singleplayer,
+.btn.multiplayer {
+    font-size: 1.5em;
+}
+
+.mode-buttons .btn.singleplayer {
+    animation: fadeContentLeft 1s ease-in-out;
+}
+
+.btn.singleplayer {
+    animation: fadeContentRight 1.5s ease-in-out;
+}
+
+.mode-buttons .btn.multiplayer {
+    animation: fadeContentRight 1s ease-in-out;
+}
+
+.btn.multiplayer {
+    animation: fadeContentRight 1.5s ease-in-out;
+}
+
+.singlePlayerRound {
+  font-size: 2em;
+}
+
+hr {
+  border: 1px solid #8888 !important;
+  width: 50%;
+}
+
+.countdown {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 40%;
+  font-size: 4em;
+}
+
+
+/* Min width for horizontal devices */
+@media (min-width: 992px) {
+.centerGameAreaText {
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  font-size: 3em;
+  width: 60%;
+}
+}
+@keyframes fadeTitleDown {
+    0% {
+      opacity: 0;
+      transform: translateY(5em);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(2.5em);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes fadeContentLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-7.5em);
+    }
+    75% {
+      opacity: 0;
+      transform: translateX(-7.5em);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes fadeContentRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-7.5em);
+    }
+    75% {
+      opacity: 0;
+      transform: translateX(7.5em);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+/* MOBILE ONLY */
+
+@media (max-width: 992px) {
+  .gameAreaTitle {
+      font-size: 2.75em !important;
+      margin-bottom: -1em;
+  }
+  .loggedInPageTitle {
+      font-size: 2.75em !important;
+  }
+
+  .modeDesc {
+    font-size: 1.25em !important;
+  }
+
+  .centerGameAreaText {
+    font-size: 2em;
+  }
+}

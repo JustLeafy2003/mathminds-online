@@ -1,4 +1,9 @@
-.App {
+/* Import font */
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+/* Make everything centered and use the custom font */
+body {
+  font-family: 'Fjalla One', sans-serif !important;
   text-align: center;
 }
 
@@ -48,10 +53,10 @@ Login css
 */
 
 
-.login-container{
+.central-container {
   
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: 1em auto;
   padding: 20px;
   background-color: white;
   border-radius: 4px;
@@ -101,4 +106,411 @@ input{
   text-align: center;
   background-color: #f5f5f5;
   /* Add additional styles for the footer */
+}
+
+/* Add the following CSS to your stylesheets or component */
+.Toastify__toast-container {
+  width: 300px;  /* Set a fixed width if desired */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  z-index: 9999;  /* Ensure the toasts appear above other elements */
+}
+
+/* Adjust the animation speed */
+.Toastify__toast--enter {
+  animation: Toastify__slideIn 0.2s ease-in;
+}
+
+.Toastify__toast--exit {
+  animation: Toastify__slideOut 0.2s ease-out;
+}
+
+@keyframes Toastify__slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes Toastify__slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+body {
+  background: #f6f6f6;
+}
+
+.central-container {
+  background: #fff;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 1em;
+  border-radius: 1em;
+  width: 300px;
+  margin: 1em auto;
+}
+
+.btn {
+  background: #098765 !important;
+  font-weight: normal !important;
+}
+
+.input-icon {
+  color: #098765;
+}
+
+input {
+  border: none;
+  border-bottom: 3px solid;
+  border-radius: 0;
+}
+
+input:hover, input:active, input:focus {
+  border-bottom: 3px solid #098765;
+  outline: none;
+}
+
+.btn {
+  color: white !important;
+  border: 2px solid #098765 !important;
+  padding: .66em 1em;
+  margin: 1em;
+  font-size: 14px;
+  border-radius: .5em;
+}
+
+.btn:active, .btn:focus, .btn:hover {
+  transition: .3s;
+  outline: none;
+  color: #098765 !important;
+  background: transparent !important;
+  border: 2px solid #098765 !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:active, .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+#logo {
+  margin: 0 auto;
+}
+
+.btn {
+  padding: .66em 1em !important;
+}
+
+.mode-buttons {
+  text-align: center;
+}
+
+/* Min width for horizontal devices */
+@media (min-width: 992px) {
+  .nav-btn {
+    padding: .66em 1em;
+    color: #098765;
+    text-decoration: none;
+    background: white;
+    border-radius: .5em;
+    margin-left: 1em;
+    border: 2px solid white;
+  }
+  .nav-btn:hover, .nav-btn:active, .nav-btn:focus {
+    transition: .3s;
+    background: transparent;
+    color: white;
+    outline: none;
+  }
+
+  #logo:active, #logo:focus {
+    transition: .3s;
+    outline: 5px solid white;
+    padding: 0 .5em;
+    border-radius: .5em;
+  }
+
+  .mode-buttons {
+    text-align: center;
+  }
+
+  .btn.camera {
+    width: 101% !important;
+    margin-left: 4.5em !important;
+  }
+}
+
+/* Min width for vertical devices */
+@media (max-width: 991px) {
+
+.navbar {
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 0.5rem;
+  --bs-navbar-toggler-padding-x: 1rem;
+}
+
+.container {
+  padding-left: 1em;
+}
+
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  padding: .5em 0;
+  margin: 0 1em;
+}
+
+.btn.btn-sm.text-light {
+  border: 2px solid #098765 !important;
+}
+
+.countdown {
+  top: 45%;
+}
+
+.centerGameAreaText .btn {
+  font-size: .65em !important;
+}
+
+}
+
+/* DARK THEME */
+
+.dark-theme.App {
+  background: #171717;
+  color: #eed;
+}
+.dark-theme {
+.custom-color {
+  color: gray;
+}
+
+.central-container {
+  background: #8884;
+  color: #fff;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+}
+
+.btn {
+  background: #053 !important;
+  border-color: #053 !important;
+}
+
+input {
+  border: none;
+  border-bottom: 3px solid;
+  border-radius: 0;
+  transition: .3s;
+}
+
+.input-icon {
+  color: #fff;
+}
+
+input:hover, input:active, input:focus {
+  border-color: #053;
+}
+
+.btn:active, .btn:focus, .btn:hover {
+  color: #fff !important;
+  border: 2px solid #fff !important;
+  background: transparent !important;
+}
+
+.nav-btn:hover, .nav-btn:active, .nav-btn:focus {
+  color: white;
+}
+
+.nav-btn {
+  color: #053;
+}
+
+.navbar, footer {
+  background-color: #053 !important;
+}
+}
+
+.dark-theme .btn.btn-sm.text-light:hover,
+.dark-theme .btn.btn-sm.text-light:active,
+.dark-theme .btn.btn-sm.text-light:focus {
+  border-color: white !important;
+  background: transparent !important;
+  color: white !important;
+}
+
+
+/* MOBILE ONLY STYLES */
+@media (max-width: 991px) {
+.dark-theme .navbar-collapse a {
+  color: white !important;
+}
+
+.nav-btn.theme-toggle-button {
+  background: transparent;
+  border: none;
+  text-align: left;
+}
+
+.navbar-toggler {
+  color: white !important;
+}
+
+.dark-theme .nav-btn.theme-toggle-button {
+  color: white !important;
+}
+
+.central-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+}
+
+/* TOAST STYLES */
+/* CUSTOM TOAST STYLES */
+.Toastify__toast-container {
+  bottom: 1.5em;
+}
+
+.Toastify__toast-body {
+  font-family: 'fjalla One', sans-serif;
+}
+
+/* Styles for success toast */
+.Toastify__toast--success {
+  background-color: #333; /* Update with your desired background color for success */
+}
+
+.Toastify__toast--success svg:not(.Toastify__close-button > svg) {
+  fill: #098765 !important; /* Green color for success */
+}
+.Toastify__toast--error svg:not(.Toastify__close-button > svg) {
+  fill: #e74c3c !important; /* Red color for error */
+}
+
+/* Styles for light theme */
+.Toastify__toast {
+  background-color: #fff !important;
+  color: black !important;
+  border-radius: 0 .5em .5em 0;
+}
+
+.Toastify__close-button.Toastify__close-button--light {
+  opacity: 1;
+  color: black !important;
+}
+
+.Toastify__progress-bar.Toastify__progress-bar--animated.Toastify__progress-bar-theme--light.Toastify__progress-bar--success {
+  background: #098765;
+}
+
+/* Styles for dark theme */
+.dark-theme .Toastify__toast {
+  background-color: #333 !important;
+  color: #eed !important;
+}
+
+.dark-theme .Toastify__close-button.Toastify__close-button--light {
+  opacity: 1;
+  color: #eed !important;
+}
+
+/* LEADERBOARD TABLE */
+.css-1ygcj2i-MuiTableCell-root,
+.css-1ex1afd-MuiTableCell-root {
+  font-family: fjalla One !important;
+}
+
+.MuiTableRow-root.MuiTableRow-head.css-1q1u3t4-MuiTableRow-root {
+  background: #eee;
+}
+
+.dark-theme .MuiTableRow-root.MuiTableRow-head.css-1q1u3t4-MuiTableRow-root,
+.dark-theme .css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
+  background: #333;
+}
+
+.dark-theme .css-1ygcj2i-MuiTableCell-root,
+.dark-theme .css-1ex1afd-MuiTableCell-root {
+  color: #eed;
+}
+
+.dark-theme .css-1ex1afd-MuiTableCell-root {
+  background: #222;
+  border-bottom: 1px solid #8884;
+}
+
+.dark-theme .css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
+  color: #eed !important;
+}
+
+.dark-theme .MuiButtonBase-root.Mui-disabled.MuiIconButton-root.MuiIconButton-colorInherit.MuiIconButton-sizeMedium.css-zylse7-MuiButtonBase-root-MuiIconButton-root {
+  color: #666;
+}
+
+.dark-theme .css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input {
+  color: #eed;
+}
+
+.dark-theme .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  background: transparent !important;
+}
+
+.dark-theme .MuiTableRow-root.MuiTableRow-footer.css-1q1u3t4-MuiTableRow-root {
+  background: #323232 !important;
+}
+
+.dark-theme .css-1ygcj2i-MuiTableCell-root {
+  border-bottom: 1px solid #323232 !important;
+}
+
+.css-fikjyc-MuiTableCell-root-MuiTablePagination-root {
+  border: none;
+}
+
+/*WebRTC styles*/
+.css-1kni4lv-MuiPaper-root {
+  background: #8884 !important;
+  border: none !important;
+  color: currentColor !important;
+  border-radius: 1em;
+}
+
+video {
+  border-radius: .5em !important;
+  height: 75% !important;
+}
+
+.css-1x4bm6q-MuiSwitch-root {
+  margin-top: 1em;
+}
+
+.css-1invrju-MuiTypography-root {
+  color: #098765 !important;
+  font-family: fjalla One !important;
+  margin: .25em 0 !important;
+}
+
+.css-ci5apu-MuiSvgIcon-root {
+  color: #098765;
 }
