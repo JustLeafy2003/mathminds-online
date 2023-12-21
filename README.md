@@ -1,6 +1,4 @@
-Certainly! Here's the integrated README.md with the additional instructions for handling the `nest-api` submodule:
-
-```markdown
+```
 # Mathminds Online
 
 ## Project Setup Instructions
