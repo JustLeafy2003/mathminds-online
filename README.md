@@ -1,4 +1,4 @@
-```
+
 # Mathminds Online
 
 ## Project Setup Instructions
